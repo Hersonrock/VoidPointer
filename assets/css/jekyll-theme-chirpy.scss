@@ -1,0 +1,21 @@
+---
+---
+@use 'main';
+
+/* Option A: put the image in the top banner (home & pages) */
+#site-banner,
+.page .page-header {
+  background-image: url('/assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Option B (fallback, works everywhere): a subtle full-page background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('/assets/img/background.jpg') center / cover no-repeat;
+  opacity: 0.25;         /* tweak this */
+  z-index: -1;           /* behind everything */
+}

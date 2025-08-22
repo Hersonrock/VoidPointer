@@ -2,7 +2,8 @@
 title: Spike's Blog
 tagline: Notes, graphics, and me yelling at compilers
 description: A modern blog powered by Jekyll and Chirpy
-url: "https://Hersonrock.github.io"   
+url: "https://hersonrock.github.io"
+baseurl: "/VoidPointer"  
 lang: en_US
 timezone: America/Bogota                
 

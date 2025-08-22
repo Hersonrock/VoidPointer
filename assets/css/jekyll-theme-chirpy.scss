@@ -2,20 +2,20 @@
 ---
 @use 'main';
 
-/* Option A: put the image in the top banner (home & pages) */
 #site-banner,
 .page .page-header {
-  background-image: url('/assets/img/background.jpg');
+  background-image: url('{{ "/assets/img/background.jpg" | relative_url }}');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 220px; /* adjust if you want a taller hero */
 }
 
-/* Option B (fallback, works everywhere): a subtle full-page background */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: url('/assets/img/background.jpg') center / cover no-repeat;
-  opacity: 0.25;         /* tweak this */
-  z-index: -1;           /* behind everything */
+  background: url('{{ "/assets/img/background.jpg" | relative_url }}') center / cover no-repeat fixed;
+  opacity: .28;
+  z-index: -1;
 }

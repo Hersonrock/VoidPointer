@@ -1,18 +1,10 @@
 ---
-
 layout: post
-
 title: Welcome to My Blog
-
-date: 2025-08-22 12:00
-
-categories: \[General]
-
-tags: \[welcome, blog]
-
+date: 2025-08-22 12:00 -0500
+categories: [general]
+tags: [welcome, blog]
 ---
-
-
 
 \# Hello, World!
 
